@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <title>DrToB Systems — The Production Runtime for Enterprise AI Agents</title>
+  <meta name="description" content="drtob.com | DrToB Systems, Inc. (San Francisco, CA). The deterministic execution runtime for autonomous enterprise AI workflows. Formal state verification, dual-model consensus, and zero data retention.">
+
+  <!-- Inline SVG Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23090807'/%3E%3Cpath d='M28 26h22a20 20 0 0 1 0 40H28V26zm14 27a7 7 0 0 0 0-14H39v14h3z' fill='%23FF5500'/%3E%3Ccircle cx='68' cy='66' r='6' fill='%23D4FF00'/%3E%3C/svg%3E">
+
+  <!-- OpenGraph / Social Sharing Metadata -->
+  <meta property="og:title" content="DrToB Systems — The Production Runtime for Enterprise AI">
+  <meta property="og:description" content="Deploy autonomous agent workflows that never break. Deterministic state machines, dual-model consensus, and zero data retention.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://drtob.com">
+
+  <!-- Self-Contained Design System (Zero External Blocking CDNs) -->
+  <link rel="stylesheet" href="assets/css/hyper-style.css">
+
+  <!-- Punchy Tall Google Font (Chivo + Space Mono) with reliable fallbacks -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,700;0,900;1,900&family=Space+Mono:wght@400;700&display=swap" media="print" onload="this.media='all'">
+</head>
+<body class="subtle-warm-grid">
+
+  <!-- Atmospheric Solar Glow -->
+  <div class="solar-aurora"></div>
+
+  <!-- Interactive 60 FPS Neural Physics Mesh Canvas -->
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- ==================== 1. PRIMARY NAVBAR ==================== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-row">
+        <!-- Logo -->
+        <a href="#" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+          <div class="brand-badge">DT</div>
+          <div>
+            <div style="font-family: var(--font-hero); font-weight: 900; font-size: 20px; color: var(--text-ivory); text-transform: uppercase; letter-spacing: -0.01em;">
+              drtob<span style="color: var(--accent-solar);">.</span>systems
+            </div>
+          </div>
+        </a>
+
+        <!-- Clear Product Links -->
+        <nav class="nav-links">
+          <a href="#workbench">Studio</a>
+          <a href="#cli">Developer CLI</a>
+          <a href="#pillars">Architecture</a>
+          <a href="#benchmarks">Workloads</a>
+          <a href="#sdk">Developers</a>
+          <a href="#trust">Security</a>
+        </nav>
+
+        <!-- Right Action Controls -->
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <!-- Tactile Audio Toggle -->
+          <button id="audio-toggle-btn" onclick="toggleAudio()" class="audio-toggle">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+            <span id="audio-toggle-label">AUDIO: MUTED</span>
+          </button>
+
+          <!-- Primary CTA Button -->
+          <button onclick="openContactModal()" class="btn-magnetic btn-solar">
+            Request Protocol Review
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== 2. KINETIC HERO STATEMENT ==================== -->
+  <section style="padding-top: 80px; padding-bottom: 32px; text-align: center;">
+    <div class="container">
+
+      <!-- Product Release Pill -->
+      <div style="display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; background: rgba(255, 85, 0, 0.1); border: 1px solid rgba(255, 85, 0, 0.3); border-radius: 20px; font-family: var(--font-mono); font-size: 11px; color: var(--accent-amber); margin-bottom: 24px;">
+        <span class="beacon-dot orange"></span>
+        <span>DrToB Enterprise Platform v3.4</span>
+      </div>
+
+      <!-- Clean, Muscular Headline (Zero ambiguity, zero word salad) -->
+      <h1 class="hero-headline">
+        The Production Runtime<br>
+        <span class="text-solar-gradient">For Enterprise AI.</span>
+      </h1>
+
+      <p style="font-size: 18px; line-height: 1.6; color: var(--text-titanium); max-width: 620px; margin: 24px auto 36px auto;">
+        Deploy autonomous agent workflows that never break. Replace unpredictable prompt chains with deterministic state machines, dual-model verification, and zero data retention.
+      </p>
+
+      <!-- Action Buttons -->
+      <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+        <button id="btn-run-pipeline" onclick="runLivePipeline()" class="btn-magnetic btn-solar" style="padding: 14px 28px; font-size: 12px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Execute Live Pipeline
+        </button>
+        <button onclick="openContactModal()" class="btn-magnetic" style="padding: 14px 28px; font-size: 12px;">
+          Schedule Architecture Assessment
+        </button>
+      </div>
+
+      <!-- Key Quantitative Signals (Responsive Grid) -->
+      <div class="hero-metrics-grid">
+        <div>
+          <div style="font-size: 28px; font-weight: 900; color: var(--text-ivory); font-family: var(--font-hero);">&lt; 15MS</div>
+          <div style="font-size: 10px; color: var(--text-dim); text-transform: uppercase; margin-top: 2px;">Dispatch Overhead</div>
+        </div>
+        <div>
+          <div style="font-size: 28px; font-weight: 900; color: var(--accent-acid); font-family: var(--font-hero);">0.00%</div>
+          <div style="font-size: 10px; color: var(--text-dim); text-transform: uppercase; margin-top: 2px;">Hallucination Rate</div>
+        </div>
+        <div>
+          <div style="font-size: 28px; font-weight: 900; color: var(--accent-solar); font-family: var(--font-hero);">100%</div>
+          <div style="font-size: 10px; color: var(--text-dim); text-transform: uppercase; margin-top: 2px;">Schema Bounds Enforced</div>
+        </div>
+        <div>
+          <div style="font-size: 28px; font-weight: 900; color: var(--text-ivory); font-family: var(--font-hero);">ZERO</div>
+          <div style="font-size: 10px; color: var(--text-dim); text-transform: uppercase; margin-top: 2px;">Data Retention (ZDR)</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 3. LIVE AGENT WORKBENCH (3D TILT STUDIO) ==================== -->
+  <section id="workbench" style="padding-bottom: 72px;">
+    <div class="container">
+      <div class="studio-workbench">
+
+        <!-- Top Status Bar -->
+        <div class="workbench-bar font-mono text-xs">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span id="workbench-beacon" class="beacon-dot"></span>
+            <span style="color: var(--text-dim);">WORKFLOW STATE:</span>
+            <strong id="workbench-status-label" style="color: var(--text-ivory); letter-spacing: 0.05em;">STATE_COMMITTED // 13.5ms</strong>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <span style="color: var(--text-dim);">RUNTIME ENGINE:</span>
+            <span style="color: var(--accent-amber); font-weight: 700;">DRTOB-ENTERPRISE-v3.4</span>
+          </div>
+        </div>
+
+        <!-- Animated SVG Circuit Bus -->
+        <svg class="circuit-bus-svg" viewBox="0 0 1000 24" preserveAspectRatio="none">
+          <line x1="60" y1="12" x2="940" y2="12" id="circuit-bus-path" class="circuit-path" />
+        </svg>
+
+        <!-- 4-Step Interactive Pipeline Deck -->
+        <div class="pipeline-deck" id="pipeline-tiles-container">
+          <!-- Populated by assets/js/studio-interactions.js with 3D tilt -->
+        </div>
+
+        <!-- Lower Inspector Deck (Responsive Class) -->
+        <div class="inspector-deck">
+
+          <!-- Left: Node Runtime Info -->
+          <div style="font-family: var(--font-mono); display: flex; flex-direction: column; gap: 12px;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <strong id="inspect-step-name" style="font-size: 14px; color: var(--text-ivory); text-transform: uppercase; font-family: var(--font-hero); font-weight: 900;">
+                Step 01: Multi-Modal Ingestion
+              </strong>
+              <span id="inspect-step-lat" style="font-size: 11px; color: var(--accent-acid); font-weight: 700; background: var(--bg-surface-1); padding: 2px 8px; border-radius: 4px; border: 1px solid var(--border-line);">
+                2.8 ms
+              </span>
+            </div>
+
+            <div id="inspect-step-sub" style="font-size: 11px; color: var(--accent-solar); font-family: var(--font-body);">
+              Schema Parsing & Intent Routing
+            </div>
+
+            <div style="background: var(--bg-sunken); padding: 14px; border: 1px solid var(--border-line); border-radius: 6px; font-size: 11px; display: flex; flex-direction: column; gap: 6px; margin-top: 4px;">
+              <div style="display: flex; justify-content: space-between;">
+                <span style="color: var(--text-dim);">RUNTIME ENGINE:</span>
+                <span id="inspect-step-rt" style="color: var(--text-ivory);">DrToB Intent Router</span>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span style="color: var(--text-dim);">MEMORY ALLOCATION:</span>
+                <span id="inspect-step-mem" style="color: var(--accent-solar); font-weight: 700;">2.8 MB</span>
+              </div>
+            </div>
+
+            <div style="font-size: 10px; color: var(--text-dim); text-transform: uppercase; display: flex; justify-content: space-between; margin-top: 6px;">
+              <span>Cryptographic Proof Status:</span>
+              <span style="color: var(--accent-mint); font-weight: 700;">VERIFIED_IN_MEMORY</span>
+            </div>
+          </div>
+
+          <!-- Right: Attestation JSON Manifest -->
+          <div style="background: var(--bg-sunken); border: 1px solid var(--border-line); border-radius: 6px; padding: 14px; font-family: var(--font-mono); font-size: 11px; overflow-x: auto;">
+            <div style="color: var(--text-dim); padding-bottom: 8px; margin-bottom: 8px; border-bottom: 1px solid var(--border-line); display: flex; justify-content: space-between; font-size: 10px;">
+              <span>// Live State Attestation Receipt</span>
+              <span style="color: var(--accent-acid);">WASM Confined</span>
+            </div>
+            <pre id="inspect-step-json" style="color: #FFAA55; font-size: 11px; line-height: 1.5;"></pre>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. LIVE INTERACTIVE CLI REPL ==================== -->
+  <section id="cli" style="padding-top: 60px; padding-bottom: 72px; border-top: 1px solid var(--border-line); background: var(--bg-surface-1);">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px; margin-bottom: 28px;">
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--accent-solar); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;">
+            Developer Substrate
+          </div>
+          <h2 style="font-family: var(--font-hero); font-weight: 900; font-size: 34px; color: var(--text-ivory); text-transform: uppercase; margin-top: 6px;">
+            Interactive CLI Control
+          </h2>
+          <p style="font-size: 13px; color: var(--text-dim); margin-top: 4px;">Click commands below to test live cluster resolution, state invariance, and quorum dispatching.</p>
+        </div>
+
+        <!-- Terminal Command Switcher Tabs -->
+        <div style="display: flex; gap: 8px;">
+          <button id="cli-btn-test" onclick="switchCliCommand('test')" class="cli-btn active">drtob verify</button>
+          <button id="cli-btn-status" onclick="switchCliCommand('status')" class="cli-btn">drtob cluster</button>
+          <button id="cli-btn-reconcile" onclick="switchCliCommand('reconcile')" class="cli-btn">drtob workflow</button>
+        </div>
+      </div>
+
+      <!-- Terminal Output Window -->
+      <div class="cli-terminal">
+        <div class="cli-bar">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span style="width: 8px; height: 8px; border-radius: 50%; background: #FF5500;"></span>
+            <span style="font-size: 11px; color: var(--text-dim);">drtob-cli-session // sh</span>
+          </div>
+          <span style="font-size: 10px; color: var(--text-dim);">UTF-8 • Strict Execution</span>
+        </div>
+        <pre id="cli-output-text" style="padding: 20px; font-size: 12px; line-height: 1.6; color: var(--text-ivory); overflow-x: auto;">$ drtob verify --strict-quorum --workflow treasury
+[INIT] Dispatching verification across 3 isolated model enclaves...
+[NODE 01] RiskEvaluator: 0.00 anomaly score [PASS]
+[NODE 02] AMLCompliance: Zero rule violations [PASS]
+[NODE 03] StateAuditor: Schema bounds validated [PASS]
+[SUCCESS] Multi-model consensus reached in 12.4ms. Hash: 0x89f41b...committed.</pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. THREE CORE ARCHITECTURAL PILLARS ==================== -->
+  <section id="pillars" style="padding-top: 72px; padding-bottom: 72px; border-top: 1px solid var(--border-line);">
+    <div class="container">
+      <div style="text-align: center; max-width: 620px; margin: 0 auto 48px auto;">
+        <div style="font-family: var(--font-mono); font-size: 11px; color: var(--accent-solar); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;">
+          Core Platform Architecture
+        </div>
+        <h2 style="font-family: var(--font-hero); font-weight: 900; font-size: 38px; color: var(--text-ivory); text-transform: uppercase; margin-top: 8px;">
+          Engineered For Zero-Failure Systems
+        </h2>
+      </div>
+
+      <div class="pillar-deck">
+        <div class="pillar-panel tilt-card">
+          <div style="color: var(--accent-solar); font-family: var(--font-mono); font-weight: 700; font-size: 12px; margin-bottom: 12px;">01 // STATE MACHINES</div>
+          <h3 style="font-family: var(--font-hero); font-weight: 900; font-size: 22px; color: var(--text-ivory); text-transform: uppercase;">
+            Deterministic State-Machines
+          </h3>
+          <p style="font-size: 13px; color: var(--text-titanium); line-height: 1.6; margin-top: 12px;">
+            Workflows compile into formal directed acyclic graphs (DAG). If an agent returns an out-of-spec schema or ambiguous intent, the transaction deterministically halts and initiates compensating transactions.
+          </p>
+        </div>
+
+        <div class="pillar-panel tilt-card">
+          <div style="color: var(--accent-acid); font-family: var(--font-mono); font-weight: 700; font-size: 12px; margin-bottom: 12px;">02 // ADVERSARIAL CONSENSUS</div>
+          <h3 style="font-family: var(--font-hero); font-weight: 900; font-size: 22px; color: var(--text-ivory); text-transform: uppercase;">
+            Multi-Model Consensus & Quorum
+          </h3>
+          <p style="font-size: 13px; color: var(--text-titanium); line-height: 1.6; margin-top: 12px;">
+            Prevent hallucinations before they reach production. Independent model agents cross-verify facts, computations, and API arguments with dual-blind Byzantine arbitration.
+          </p>
+        </div>
+
+        <div class="pillar-panel tilt-card">
+          <div style="color: var(--accent-solar); font-family: var(--font-mono); font-weight: 700; font-size: 12px; margin-bottom: 12px;">03 // COMPLETE ISOLATION</div>
+          <h3 style="font-family: var(--font-hero); font-weight: 900; font-size: 22px; color: var(--text-ivory); text-transform: uppercase;">
+            Zero Third-Party Data Retention
+          </h3>
+          <p style="font-size: 13px; color: var(--text-titanium); line-height: 1.6; margin-top: 12px;">
+            Confidential memory buffers are wiped immediately upon response termination. Proprietary enterprise data and prompts are never stored on persistent third-party disks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 6. ENTERPRISE WORKLOADS & BENCHMARKS ==================== -->
+  <section id="benchmarks" style="padding-top: 72px; padding-bottom: 72px; border-top: 1px solid var(--border-line); background: var(--bg-surface-1);">
+    <div class="container">
+      <div style="max-width: 600px; margin-bottom: 32px;">
+        <div style="font-family: var(--font-mono); font-size: 11px; color: var(--accent-solar); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;">
+          Enterprise Benchmarks
+        </div>
+        <h2 style="font-family: var(--font-hero); font-weight: 900; font-size: 36px; color: var(--text-ivory); text-transform: uppercase; margin-top: 6px;">
+          Autonomous Production Workloads
+        </h2>
+        <p style="font-size: 13px; color: var(--text-dim); margin-top: 6px;">
+          Real-time execution reliability, hallucination elimination, and cost performance metrics across core enterprise workflows.
+        </p>
+      </div>
+
+      <div class="flight-grid" id="workload-matrix-container">
+        <!-- Rendered dynamically by assets/js/studio-interactions.js with 3D tilt -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 7. DEVELOPER SDK INTEGRATION ==================== -->
+  <section id="sdk" style="padding-top: 72px; padding-bottom: 72px; border-top: 1px solid var(--border-line);">
+    <div class="container">
+      <div class="sdk-grid">
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--accent-solar); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;">
+            Developer Substrate
+          </div>
+          <h2 style="font-family: var(--font-hero); font-weight: 900; font-size: 38px; color: var(--text-ivory); text-transform: uppercase; margin-top: 6px;">
+            Typed Code.<br>Zero YAML Overhead.
+          </h2>
+          <p style="font-size: 14px; color: var(--text-titanium); line-height: 1.6; margin-top: 14px;">
+            DrToB provides idiomatic TypeScript and Python SDKs. Enforce idempotency tokens, hardware-isolated memory enclaves, and verifiable proofs with standard programming constructs.
+          </p>
+
+          <div style="margin-top: 24px; padding: 14px 18px; background: var(--bg-surface-1); border: 1px solid var(--border-line); border-radius: 6px; font-family: var(--font-mono); font-size: 12px; display: flex; justify-content: space-between; align-items: center;">
+            <span style="color: var(--text-ivory);"><strong style="color: var(--accent-solar);">$</strong> npm install @drtob/runtime</span>
+            <button onclick="copyCodeSnippet()" id="code-copy-text" style="color: var(--accent-acid); background: none; border: none; font-family: var(--font-mono); font-size: 11px; cursor: pointer; font-weight: 700;">
+              Copy Code
+            </button>
+          </div>
+        </div>
+
+        <!-- Code Block -->
+        <div class="code-box">
+          <div class="code-bar">
+            <div style="display: flex; gap: 8px;">
+              <button onclick="switchCodeTab('ts')" id="tab-btn-ts" class="code-btn active">TypeScript</button>
+              <button onclick="switchCodeTab('py')" id="tab-btn-py" class="code-btn">Python</button>
+              <button onclick="switchCodeTab('curl')" id="tab-btn-curl" class="code-btn">cURL</button>
+            </div>
+            <span style="font-size: 10px; color: var(--text-dim);">runtime.ts // Enterprise Enclave</span>
+          </div>
+          <pre style="padding: 20px; line-height: 1.6; color: var(--text-ivory); overflow-x: auto;"><code id="code-display-block">import { DrToBKernel, EnclavePolicy } from '@drtob/runtime';
+
+export default {
+  async handleTransaction(req: Request): Promise&lt;Response&gt; {
+    // 1. Initialize deterministic enterprise state runtime
+    const kernel = new DrToBKernel({
+      apiKey: process.env.DRTOB_SECRET_KEY,
+      strictQuorum: true,
+      idempotencyKey: req.headers.get('x-idempotency-key')
+    });
+
+    // 2. Execute parallel consensus across agent cluster
+    const receipt = await kernel.arbitrate({
+      workflow: 'cross_border_treasury_settlement',
+      maxLatencyMs: 200,
+      payload: await req.json()
+    });
+
+    // 3. Return cryptographically attested state proof
+    return Response.json({
+      committed: true,
+      proofHash: receipt.sha256Proof,
+      verdict: receipt.state
+    });
+  }
+};</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 8. ENTERPRISE TRUST & COMPLIANCE ==================== -->
+  <section id="trust" style="padding-top: 72px; padding-bottom: 72px; border-top: 1px solid var(--border-line); background: var(--bg-surface-1);">
+    <div class="container">
+      <div style="text-align: center; max-width: 600px; margin: 0 auto 48px auto;">
+        <div style="font-family: var(--font-mono); font-size: 11px; color: var(--accent-solar); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;">
+          Enterprise Trust Vault
+        </div>
+        <h2 style="font-family: var(--font-hero); font-weight: 900; font-size: 34px; color: var(--text-ivory); text-transform: uppercase; margin-top: 6px;">
+          Security Standards & Compliance
+        </h2>
+        <p style="font-size: 13px; color: var(--text-dim); margin-top: 6px;">
+          Built from the ground up to satisfy the strictest enterprise data sovereignty and privacy mandates.
+        </p>
+      </div>
+
+      <div class="trust-grid">
+        <div class="tilt-card" style="padding: 24px;">
+          <strong style="font-family: var(--font-mono); font-size: 13px; color: var(--text-ivory); display: block; margin-bottom: 8px;">SOC 2 Architecture</strong>
+          <p style="font-size: 12px; color: var(--text-titanium); line-height: 1.5;">
+            Continuous audit logging, access controls, and boundary isolation designed for enterprise security assurance.
+          </p>
+        </div>
+        <div class="tilt-card" style="padding: 24px;">
+          <strong style="font-family: var(--font-mono); font-size: 13px; color: var(--accent-acid); display: block; margin-bottom: 8px;">HIPAA & GDPR Ready</strong>
+          <p style="font-size: 12px; color: var(--text-titanium); line-height: 1.5;">
+            Zero persistence of protected health information (PHI) or personal data across model checkpoints.
+          </p>
+        </div>
+        <div class="tilt-card" style="padding: 24px;">
+          <strong style="font-family: var(--font-mono); font-size: 13px; color: var(--accent-solar); display: block; margin-bottom: 8px;">TLS 1.3 / ECH</strong>
+          <p style="font-size: 12px; color: var(--text-titanium); line-height: 1.5;">
+            Encrypted in transit and inside confidential hardware enclaves. Customer-held encryption keys supported.
+          </p>
+        </div>
+        <div class="tilt-card" style="padding: 24px;">
+          <strong style="font-family: var(--font-mono); font-size: 13px; color: var(--text-ivory); display: block; margin-bottom: 8px;">Air-Gap Blueprints</strong>
+          <p style="font-size: 12px; color: var(--text-titanium); line-height: 1.5;">
+            Dedicated VPC and isolated single-tenant Kubernetes options for regulated enterprise workloads.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 9. FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="font-family: var(--font-hero); font-weight: 900; font-size: 20px; color: var(--text-ivory); text-transform: uppercase; margin-bottom: 10px;">
+            DrToB Systems, Inc.
+          </div>
+          <p style="color: var(--text-dim); font-size: 11px; line-height: 1.6;">
+            525 Market Street, 32nd Floor<br>
+            San Francisco, CA 94105, USA<br>
+            contact@drtob.com
+          </p>
+        </div>
+
+        <div>
+          <strong style="color: var(--text-ivory); display: block; margin-bottom: 10px; text-transform: uppercase;">Substrate</strong>
+          <div style="display: flex; flex-direction: column; gap: 8px; font-size: 11px;">
+            <a href="#workbench" style="color: var(--text-dim); text-decoration: none;">Agent Workbench</a>
+            <a href="#cli" style="color: var(--text-dim); text-decoration: none;">Developer CLI</a>
+            <a href="#pillars" style="color: var(--text-dim); text-decoration: none;">Deterministic Substrate</a>
+          </div>
+        </div>
+
+        <div>
+          <strong style="color: var(--text-ivory); display: block; margin-bottom: 10px; text-transform: uppercase;">Compliance</strong>
+          <div style="display: flex; flex-direction: column; gap: 8px; font-size: 11px;">
+            <a href="#" style="color: var(--text-dim); text-decoration: none;">Zero Data Retention SLA</a>
+            <a href="#" style="color: var(--text-dim); text-decoration: none;">FIPS 140-3 Encryption</a>
+            <a href="#" style="color: var(--text-dim); text-decoration: none;">Security Disclosures</a>
+          </div>
+        </div>
+
+        <div>
+          <strong style="color: var(--text-ivory); display: block; margin-bottom: 10px; text-transform: uppercase;">Engagement</strong>
+          <button onclick="openContactModal()" class="btn-magnetic btn-solar" style="width: 100%; font-size: 10px;">
+            Schedule Architecture Brief
+          </button>
+        </div>
+      </div>
+
+      <div style="padding-top: 28px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; font-size: 11px; color: var(--text-dim);">
+        <div>
+          © 2024–2026 DrToB Systems, Inc. drtob.com. All rights reserved.
+        </div>
+        <div style="color: var(--text-titanium);">
+          San Francisco, California • Enterprise AI Agent Runtime
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== 10. PROFESSIONAL INLINE MODAL ==================== -->
+  <div id="contact-modal" class="modal-overlay">
+    <div class="modal-card">
+      <button onclick="closeContactModal()" style="position: absolute; top: 16px; right: 16px; background: none; border: none; font-family: var(--font-mono); font-size: 12px; color: var(--text-dim); cursor: pointer;">
+        [CLOSE]
+      </button>
+
+      <div style="font-family: var(--font-mono); font-size: 10px; color: var(--accent-solar); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px;">
+        Architecture Brief
+      </div>
+      <h3 style="font-family: var(--font-hero); font-weight: 900; font-size: 22px; color: var(--text-ivory); text-transform: uppercase;">
+        Initialize Architecture Review
+      </h3>
+      <p style="font-size: 12px; color: var(--text-titanium); margin-top: 4px;">
+        Direct technical engagement with a Principal Solutions Architect in San Francisco.
+      </p>
+
+      <!-- Active Form -->
+      <form id="modal-form" onsubmit="handleModalSubmit(event)" style="margin-top: 24px;">
+        <div class="form-group">
+          <label class="form-label">Company Legal Name *</label>
+          <input required type="text" placeholder="e.g. Acme Corp" class="form-input">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Corporate Email *</label>
+          <input required type="email" placeholder="name@company.com" class="form-input">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Target Workload / Accuracy Goal</label>
+          <input type="text" placeholder="e.g. Treasury reconciliation, 100% schema bounds" class="form-input">
+        </div>
+        <button type="submit" class="btn-magnetic btn-solar" style="width: 100%; margin-top: 8px;">
+          Dispatch Review Transmission
+        </button>
+      </form>
+
+      <!-- Inline Receipt (Zero alert) -->
+      <div id="modal-ack" style="display: none; margin-top: 24px; padding: 24px; background: var(--bg-sunken); border: 1px solid var(--accent-acid); border-radius: 6px; text-align: center; font-family: var(--font-mono);">
+        <div style="color: var(--accent-acid); font-weight: 700; font-size: 12px; text-transform: uppercase; margin-bottom: 8px;">
+          ✓ TRANSMISSION_ATTESTED // 200 OK
+        </div>
+        <div style="font-size: 11px; color: var(--text-titanium); line-height: 1.6; font-family: var(--font-body);">
+          Your architecture review request has been verified. A Solutions Architect will reach out to your corporate domain within 2 business hours.
+        </div>
+        <div style="font-size: 10px; color: var(--text-dim); margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--border-line);">
+          DISPATCH RECEIPT: <strong style="color: var(--text-ivory);">rcpt_drtob_77189a</strong>
+        </div>
+        <button onclick="closeContactModal()" class="btn-magnetic" style="margin-top: 16px; width: 100%; font-size: 11px;">
+          Dismiss Terminal
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/physics-neural.js"></script>
+  <script src="assets/js/hardware-audio.js"></script>
+  <script src="assets/js/studio-interactions.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+name = "drtob-web"
+main = "worker.js"
+compatibility_date = "2024-04-01"
+
+# Cloudflare Workers 静态资源服务目录
+[assets]
+directory = "."
+
+# 允许直接 import HTML 文本
+[[rules]]
+type = "Text"
+globs = ["**/*.html"]
+fallthrough = true

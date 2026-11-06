@@ -1,0 +1,14 @@
+{
+  "name": "drtob-web",
+  "version": "1.0.0",
+  "description": "DrToB Enterprise AI Agent Homepage - drtob.com",
+  "main": "worker.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "pages:deploy": "wrangler pages deploy . --project-name drtob-web"
+  },
+  "devDependencies": {
+    "wrangler": "^3.90.0"
+  }
+}
